@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.9.16)  16 SEP 2017 23:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2017.9.16)  16 SEP 2017 23:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -153,7 +153,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.45   \item B
+l.45   \item g
+              ithub.com/beefy\\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./Nate_Schultz_Resume.tex:47: LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47   \item B
               orn on 08/07/1996\\
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -170,7 +182,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  23i,4n,19p,185b,208s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Nate_Schultz_Resume.pdf (1 page, 34977 bytes).
+Output written on Nate_Schultz_Resume.pdf (1 page, 35017 bytes).
 PDF statistics:
  16 PDF objects out of 1000 (max. 8388607)
  10 compressed objects within 1 object stream
