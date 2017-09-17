@@ -30,6 +30,11 @@
 \usepackage{currvita}
 \newcommand*{\ac}[1]{\mbox{#1}}
 \tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\documentclass [a4paper,12pt,oneside,final]{book}
+\usepackage[left=35mm,top=26mm,right=26mm,bottom=15mm]{geometry}
 \pagenumbering{gobble}
 \begin{document}
 \begin{cv}{Nathaniel Schultz}
@@ -40,18 +45,19 @@
   \item Born on 08/07/1996\\
     Concord, Massachusetts
   \begin{cvlist}{Education}
-  \item[09/2015--06/2019] Bachelor of Science in Mathematics and Computer Science at Drexel University
-  \end{cvlist}
-  \begin{cvlist}{Experience}
-  \item[07/2016--Present] Backend developer at Booksmart Touring.
-  \item[03/2016--09/2016] Custom data analyst at Thomson Reuters, IP \& Science.
-  \item[10/2014--10/2015] Full stack developer at Armada International Advisors.
+  \item[09/2015--06/2019] Bachelor of Science in Mathematics and Computer Science at Drexel University, concentration in Artificial Intelligence
   \end{cvlist}
   \begin{cvlist}{Knowledge}
   \item[Database] AWS S3, Hadoop, HiveQL, MS SQL, MongoDB, MySQL
   \item[Frameworks] ASP .NET, Cordova, Django, Express, Symfony
-  \item[Tools] Git, Pandas, Socket.IO, Spynner, Vagrant, lxml
   \item[Languages] Bash, Basic, C, C\#, C++, Go, Haskell, Java, Javascript, Prolog, Python, Visual Basic
+  \item[Skills] Data Analysis, Database Optimization, Specification Writing, System Development, System Optimization, Web Crawling
+  \item[Tools] Git, Pandas, Socket.IO, Spynner, Vagrant, lxml
+  \end{cvlist}
+  \begin{cvlist}{Experience}
+  \item[07/2016--Present] Backend developer at Booksmart Touring
+  \item[03/2016--09/2016] Custom data analyst at Thomson Reuters, IP \& Science
+  \item[10/2014--10/2015] Full stack developer at Armada International Advisors
   \end{cvlist}
   \begin{cvlist}{Hackathons}
   \item[Drexel Univ] Philly Codefest
@@ -60,8 +66,13 @@
   \item[New York City] Numenta NuPic
   \item[Washington DC] Hackster.IO Hardware Weekend
   \end{cvlist}
-  \cvplace{Updated}
-  \date{16.~September~2017}
+  \begin{cvlist}{Chess}
+  \item[Drexel Chess] Member since 09/2015, President since 06/2017
+  \item[USCF Rating] 1111, Provisional
+  \item[Online Rating] (lichess.org) 1650 Classical, 1738 Corrspondance, 1534 Blitz
+  \end{cvlist}
+  \cvplace{Last updated}
+  \date{16th of~September~2017}
 \end{cv}
 \end{document}
 \endinput
