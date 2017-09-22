@@ -1,82 +1,168 @@
-%%
-%% This is file `cvtest.tex',
-%% generated with the docstrip utility.
-%%
-%% The original source files were:
-%%
-%% currvita.dtx  (with options: `testfile')
-%%
-%% LaTeX sample file for the currvita package
-%%
-%% Copyright (C) 1999 Axel Reichert
-%% See the files README and COPYING.
-%%
-%% \CharacterTable
-%%   {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
-%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
-%%   Digits        \0\1\2\3\4\5\6\7\8\9
-%%   Exclamation   \!     Double quote  \"     Hash (number) \#
-%%   Dollar        \$     Percent       \%     Ampersand     \&
-%%   Acute accent  \'     Left paren    \(     Right paren   \)
-%%   Asterisk      \*     Plus          \+     Comma         \,
-%%   Minus         \-     Point         \.     Solidus       \/
-%%   Colon         \:     Semicolon     \;     Less than     \<
-%%   Equals        \=     Greater than  \>     Question mark \?
-%%   Commercial at \@     Left bracket  \[     Backslash     \\
-%%   Right bracket \]     Circumflex    \^     Underscore    \_
-%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
-%%   Right brace   \}     Tilde         \~}
-\documentclass[12pt,a4paper]{article}
-\usepackage{currvita}
-\newcommand*{\ac}[1]{\mbox{#1}}
-\tolerance=1
-\emergencystretch=\maxdimen
-\hyphenpenalty=10000
-\hbadness=10000
-\documentclass [a4paper,12pt,oneside,final]{book}
-\usepackage[left=35mm,top=26mm,right=26mm,bottom=15mm]{geometry}
-\pagenumbering{gobble}
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{document}
-\begin{cv}{Nathaniel Schultz}
-  \item 4204 Powelton Avenue, Apt 2\\
-    Philadelphia PA, 19104
-  \item Tel.:~(978)~201\,2997\\
-    Email:~nate.schultz@outlook.com
-  \item github.com/beefy\\
-    thenateschultz.com
-  \item Born on 08/07/1996\\
-    Concord, Massachusetts
-  \begin{cvlist}{Education}
-  \item[09/2015--06/2019] Bachelor of Science in Mathematics and Computer Science at Drexel University, concentration in Artificial Intelligence
-  \end{cvlist}
-  \begin{cvlist}{Knowledge}
-  \item[Database] AWS S3, Hadoop, HiveQL, MS SQL, MongoDB, MySQL
-  \item[Frameworks] ASP .NET, Cordova, Django, Express, Symfony
-  \item[Languages] Bash, Basic, C, C\#, C++, Go, Haskell, Java, Javascript, Prolog, Python, Visual Basic
-  \item[Skills] Data Analysis, Database Optimization, Specification Writing, System Development, System Optimization, Web Crawling
-  \item[Tools] Git, Pandas, Socket.IO, Spynner, Vagrant, lxml
-  \end{cvlist}
-  \begin{cvlist}{Experience}
-  \item[07/2016--Present] Backend developer at Booksmart Touring
-  \item[03/2016--09/2016] Custom data analyst at Thomson Reuters, IP \& Science
-  \item[10/2014--10/2015] Full stack developer at Armada International Advisors
-  \end{cvlist}
-  \begin{cvlist}{Hackathons}
-  \item[Drexel Univ] Philly Codefest
-  \item[Univ Maryland] Bitcamp
-  \item[Penn State Univ] PSU Hacks
-  \item[New York City] Numenta NuPic
-  \item[Washington DC] Hackster.IO Hardware Weekend
-  \end{cvlist}
-  \begin{cvlist}{Chess}
-  \item[Drexel Chess] Member since 09/2015, President since 06/2017
-  \item[USCF Rating] 1111, Provisional
-  \item[Online Rating] (lichess.org) 1650 Classical, 1738 Corrspondance, 1534 Blitz
-  \end{cvlist}
-  \cvplace{Last updated}
-  \date{16th of~September~2017}
-\end{cv}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://thenateschultz.com/}{\Large Nathaniel Schultz}} & \href{mailto:nate.schultz@outlook.com}{nate.schultz@outlook.com}\\
+  \href{http://thenateschultz.com/}{http://thenateschultz.com/} & (978) 201-2997 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Master of Science in Computer Science;  GPA: 4.00}{Aug. 2012 -- Dec. 2013}
+    \resumeSubheading
+      {Birla Institute of Technology and Science}{Pilani, India}
+      {Bachelor of Engineering in Electrical and Electronics;  GPA: 3.66 (9.15/10.0)}{Aug. 2008 -- July. 2012}
+  \resumeSubHeadingListEnd
+
+%-----------Knowledge-----------------
+\section{Knowledge}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Master of Science in Computer Science;  GPA: 4.00}{Aug. 2012 -- Dec. 2013}
+    \resumeSubheading
+      {Birla Institute of Technology and Science}{Pilani, India}
+      {Bachelor of Engineering in Electrical and Electronics;  GPA: 3.66 (9.15/10.0)}{Aug. 2008 -- July. 2012}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Google}{Mountain View, CA}
+      {Software Engineer}{Oct 2016 - Present}
+      \resumeItemListStart
+        \resumeItem{Tensorflow}
+          {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models.}
+        \resumeItem{Apache Beam}
+          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lucena Research}{Atlanta, GA}
+      {Data Scientist}{Summer 2012 and 2013}
+      \resumeItemListStart
+        \resumeItem{Portfolio Management}
+          {Created models for portfolio hedging,  portfolio optimization and price forecasting. Also creating a strategy backtesting engine used for simulating and backtesting strategies.}
+        \resumeItem{QuantDesk}
+          {Python backend for a web application used by hedge fund managers for portfolio management.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, CA}
+      {Research and Teaching Assistant}{Jan 2012 - Dec 2013}
+      \resumeItemListStart
+        \resumeItem{Research Assistant - Machine Learning}
+          {Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the python library QSTK.}
+        \resumeItem{Teaching Assistant - Computational Investing}
+          {The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{QuantSoftware Toolkit}
+      {Open source python library for financial data analysis and machine learning for finance.}
+    \resumeSubItem{Github Visualization}
+      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+    \resumeSubItem{Recommendation System}
+      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+    \resumeSubItem{Mac Setup}
+      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
 \end{document}
-\endinput
-%%
-%% End of file `cvtest.tex'.
