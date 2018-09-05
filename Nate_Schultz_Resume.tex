@@ -16,7 +16,6 @@
 \usepackage{fancyhdr}
 \usepackage[hidelinks]{hyperref}
 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -64,8 +63,8 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=10pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,8 +84,9 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Drexel University}{Philadelphia, PA}
-      {Bachelor of Science in Computer Science; Secondary major in Mathematics}{September 2015 -- June 2019 (expected)}
+      {Bachelor of Science in Computer Science}{September 2015 -- June 2019 (expected)}
     \resumeSubHeadingListEnd
+    \textit{\small{'Numeric \& Symbolic Computation' and 'Artificial Intelligence' concentrations}}
 
 
 %-----------EXPERIENCE-----------------
@@ -95,10 +95,18 @@
 
     \resumeSubheading
       {Bloomberg}{Princeton, NJ}
-      {Global Data Technical Operations Intern}{April 2018 - September 2018}
+      {Data Engineer for Fixed Income products}{April 2018 - Present}
       \resumeItemListStart
-        \resumeItem{Task Title}
-          {Task Description}
+        \resumeItem{Web Scraping}
+          {Developing and maintaining web crawlers for automated data acquisition. Performed quality control on vendor web crawlers to ensure return on investment.}
+        \resumeItem{Jira Workflow Development}
+          {Developing and maintaining customized workflows for accountability and business intelligence. Consulting with internal users for requirement gathering.}
+        \resumeItem{Exploratory Data Analysis}
+          {Researching historical workitem data to develop forecasting model. By predicting workload teams can scale or reduce vendor spending.}
+        \resumeItem{Assisting with Training}
+          {Leading training sessions for Jira development. Helped onboard 3 full time data engineers.}
+        \resumeItem{Team Building}
+          {Organizing department chess tournaments. Trivia captain for weekly competitions.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -106,11 +114,9 @@
       {Backend Developer}{July 2016 - September 2017}
       \resumeItemListStart
         \resumeItem{Webserver Development}
-          {Python backend for a web and mobile application used by tour owners and musicians}
+          {Python backend for a web and mobile application used by tour owners and musicians.}
         \resumeItem{Specification Writing}
-          {Designed new feature implementations, considering scalability and maintainability. Working with management and user interface teams to meet requirements.}
-        \resumeItem{Data Management}
-          {Migrating data safely to new models, preserving data integrity and backwards compatibility whenever possible.}
+          {Designed new feature implementations, considering scalability and maintainability. Worked with management and user interface teams to meet requirements.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -118,9 +124,9 @@
       {Contract Developer}{March 2017 - May 2017}
       \resumeItemListStart
         \resumeItem{Full Stack Feature Development}
-          {Developed and integrated new features for a website with millions of users.}
-        \resumeItem{Testing and Hotfixes}
-          {Found production bugs and developed work arounds for paying users.}
+          {Developed new features for millions of users.}
+        \resumeItem{Testing and Maintenance}
+          {Discovered production bugs and implemented hotfixes.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -138,9 +144,7 @@
       {Data Analyist}{March 2016 - September 2016}
       \resumeItemListStart
         \resumeItem{Big Data}
-          {Queried a Hadoop cluster to extract bibliometric data for customers. Optimized queries to deliver results timely and inexpensively.}
-        \resumeItem{Data Cleaning}
-          {Parsed files into a desired format. Added custom analytic fields.}
+          {Queried a Hadoop cluster to extract bibliometric data for customers.}
         \resumeItem{Web Scraping}
           {Started data population for new features and data models.}
       \resumeItemListEnd
@@ -150,11 +154,11 @@
       {Full Stack Developer}{October 2014 - October 2015}
       \resumeItemListStart
         \resumeItem{IoT Project Development}
-          {Independently developed a medical equipment tracking application using Texas Instruments' sensors.}
+          {Developed a medical equipment tracking application using TI sensors.}
         \resumeItem{Web and Mobile App Development}
           {Developed and maintained multiple web and mobile apps.}
         \resumeItem{Web Scraping for Sales Leads}
-          {Collected contact information from potential clients using web crawlers and social media scraping.}
+          {Collected contact data for sales leads using web crawlers and social media scraping.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -167,8 +171,6 @@
       {Native Android app to send and receive messages from strangers.}
     \resumeSubItem{Custom Garbage Collector}
       {Mark and sweep memory allocation example in Objective-C.}
-    \resumeSubItem{Command Line Chess Server}
-      {Real time chess as a simple networking example.}
     \resumeSubItem{Custom Graphics Engine}
       {Features include VBO rendering, first person movement, and basic collision detection.}
   \resumeSubHeadingListEnd
@@ -178,9 +180,9 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
     \resumeSubItem{Languages}
-      {Python, Javascript, C++, Java, Objective-C, C\#, Go, Haskell, Prolog, VB}
+      {Python, Javascript, Groovy, C++, Java, Objective-C, C\#, Go, Lua, Haskell, Prolog, VB}
     \resumeSubItem{Technologies}
-      {Django, MySQL, Express, HiveQL, MS SQL, Spring, MongoDB, Symfony}
+      {Django, MySQL, Express, HiveQL, MS SQL, Spring, MongoDB, Symfony, Bloomberg Terminal}
  \resumeSubHeadingListEnd
 
  % --------PROGRAMMING SKILLS------------
