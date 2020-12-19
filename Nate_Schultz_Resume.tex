@@ -1,198 +1,158 @@
-%-------------------------
-% Resume in Latex
-% Author : Sourabh Bajaj
-% License : MIT
-%------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cies Resume/CV
+% LaTeX Template
+% Version 1.1 (20/7/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Cies Breijs (cies@kde.nl)
+% https://github.com/cies/resume with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[letterpaper,11pt]{article}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage{fancyhdr}
-\usepackage[hidelinks]{hyperref}
+\documentclass[10pt,a4paper]{article} % Font size (10-12pt) and paper size (a4paper, letterpaper, legalpaper, etc)
 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\include{structure} % Include structure.tex which contains packages and document layout definitions
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.375in}
-\addtolength{\evensidemargin}{-0.375in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.5in}
-\addtolength{\textheight}{1.0in}
+\hyphenation{Some-long-word} % Specify custom hyphenation points in words with dashes where you would like hyphenation to occur, or alternatively, don't put any dashes in a word to stop hyphenation altogether
 
-\urlstyle{same}
+\begin{document} 
 
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
 
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\maintitle{Nathaniel Schultz}{}  % Your name and date of birth or subtitle
 
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+\noindent\href{mailto:nschultz13@bloomberg.net}{nschultz13@bloomberg.net}\bull % Your email address
+\textsmaller{+}1 (978) 201-2997\bull \href{bbg://screens/UUID\%2022280240}{\{UUID 22280240\}} \bull % Your phone number(s) and Skype username
+\href{https://bbgithub.dev.bloomberg.com/nschultz13}{bbgithub/nschultz13}\\ % Your URL
+2220 Walnut St Apt 518\bull Philadelphia PA, 19103 % Your address
+
+\spacedhrule{0.9em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+
+% \roottitle{Summary} % Root section title
+
+% \vspace{-1.3em} % Reduce whitespace after the Summary heading and the two-column content
+
+% \begin{multicols}{2}  % Start a two-column layout
+% \noindent \textit{A summary of your interests, achievements, history, topic of study or any other short summary of your professional life.}\\\\
+% Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis scelerisque vestibulum. Sed ut sapien et dui mollis condimentum. Phasellus enim lectus, dignissim vitae velit sit amet, porttitor tincidunt lectus. Vivamus adipiscing volutpat lacinia. Sed dui ipsum, iaculis id facilisis sed, dapibus quis lacus. Quisque blandit hendrerit malesuada. Nunc sollicitudin nisl nunc, vitae luctus leo tincidunt vel.
+
+% Pellentesque bibendum convallis adipiscing. Suspendisse facilisis id massa a lacinia. Nullam odio nibh, placerat at fermentum in, tincidunt eu ipsum. Nullam adipiscing lacus id dui suscipit commodo. Vestibulum iaculis leo imperdiet, porta lorem eu, tempus tortor. Donec interdum risus ullamcorper, vestibulum nulla ut, tincidunt ante. Duis adipiscing auctor nisi, quis tempor tortor ornare aliquet. Aenean at tempor leo. Nam eleifend venenatis elit id aliquet. Mauris quis lacinia dolor, a posuere tellus. Suspendisse nec augue pretium, condimentum risus vitae, dignissim tellus. Proin gravida ante eget massa lacinia consequat. Integer pharetra vel ligula sed vulputate. Integer eget erat quam. Proin adipiscing lorem ac purus adipiscing, non ullamcorper nisi porttitor. 
+% \end{multicols}
+
+\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Experience} % Top level section
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{Bloomberg LP}
+{\textsc{Princeton, NJ \& Philadelphia, PA (Remote)}} {
+
+\headedsubsection % Job title entry for the current employer
+{Acquisition Tech Lead}
+{Dec '19 -- Present}
+{\bodytext{I was selected as one of the initial members of this team and gained ownership of implementing the teams technical projects. I developed a prototype to display web crawler configuration information in a web UI. This prototype iterated to use the Bloomberg UI framework and is budgeted to move to prod in 2021. Other projects include a headline generator service for CF and our teams BRE ruleset comprising over 70 rules.
+\\\\
+As a point of contact for web crawler expertise, I am successful at managing my BBOT SDSK queue, resolving vendor questions, and performing quality control checks. I conduct bi-annual web crawler training sessions for our incoming co-ops and serve as an initial point of contact for their questions.
+}}
+
+\headedsubsection % Job title entry for the current employer
+{Data Engineer}
+{Jun '19 -- Dec '19}
+{\bodytext{In this role I contributed to several projects, managed our team's web crawler queue and oversaw our team's co-op. I volunteered to gain expertise in GDW, which is a configurable screen interface that was lacking talented users.
+\\\\
+I lead a project with three co-ops during this period to migrate the manual Jira access queue into PVF. This wasn't initially planned for our team: I suggested we take ownership of it to reduce the project cost by leveraging the co-ops for data entry. }}
+
+\headedsubsection % Job title entry for the current employer
+{Data Engineer Co-Op}
+{Apr '18 -- Sept '18}
+{\bodytext{As the only co-op at the firm during this period, I was able to gain expertise in each tech stack component. My contributions during this period include web crawler configurations, microservice development, Jira workflow configuration, and productivity data EDA. I enjoyed hosting office activities like chess tournaments and weekly trivia.}}
 }
 
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+%------------------------------------------------
+
+\begin{center}
+\textit{Please refer to \href{https://www.linkedin.com/in/beefybeefy/}{my Linkedin profile} for the complete list of work experiences along with recommendations.}
+\end{center}
+
+%------------------------------------------------
+
+\spacedhrule{-0.2em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\roottitle{Education} % Top level section
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{Drexel University}
+{\textsc{Philadelphia, PA}} {
+
+\headedsubsection % Job title entry for the current employer
+{Bachelor of Science in Computer Science}
+{2015 -- 2019}
+{\bodytext{Focused on computational mathematics and artificial intelligence / machine learning. During this time I was employed at startups, participated in hackathons, and held membership in industry specific clubs. I've curated a diverse portfolio of programming projects including IoT, full stack mobile and web apps (hybrid and native), data analysis / big data, and web crawlers.}}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
 
-\renewcommand{\labelitemii}{}
-\renewcommand{\labelitemi}{}
+\roottitle{Skills} % Top level section
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=10pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+%------------------------------------------------
 
-%-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+{Leadership:}
+{Establishing relationships with engineering groups, business stakeholders, and peers. Solid communication and presentation skillset. Intern management and hiring experience. Skilled in vendor management and productivity data analysis.}
 
+%------------------------------------------------
 
-\begin{document}
+\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+{Technical:}
+{Software design, workflow design, and data pipeline design. I work regularly with Python, Javascript, and Lua. Solid knowledge of web technologies and best practices relating to web crawling. Recent web development experience with React-Redux, Flask, SQL Alchemy, and PostgreSQL. CI experience with Docker and Docker-Compose. Data analysis experience in Python using Jupyter, Pandas, and Matplotlib.}
 
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://thenateschultz.com/}{\Large Nathaniel Schultz}} & \href{mailto:nate.schultz@outlook.com}{nate.schultz@outlook.com}\\
-  \href{http://thenateschultz.com/}{http://thenateschultz.com/} & (978) 201-2997 \\
-\end{tabular*}
+%------------------------------------------------
 
+\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+{Mathematics:}
+{Applied optimization theory to solve industrial design problems. Studied abstract algebra, analysis, statistics, and nonlinear algebra \textit{(among other topics).}}
 
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Drexel University}{Philadelphia, PA}
-      {Bachelor of Science in Computer Science}{September 2015 -- June 2019 (expected)}
-    \resumeSubHeadingListEnd
+%------------------------------------------------
 
+\spacedhrule{1.6em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
 
-%-----------EXPERIENCE-----------------
-\section{Experience}
-  \resumeSubHeadingListStart
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
 
-    \resumeSubheading
-      {Bloomberg}{Princeton, NJ}
-      {Data Engineer for Fixed Income products}{April 2018 - Present}
-      \resumeItemListStart
-        \resumeItem{Web Scraping}
-          {Developing and maintaining web crawlers for automated data acquisition. Performed quality control on vendor web crawlers to ensure return on investment.}
-        \resumeItem{Jira Workflow Development}
-          {Developing and maintaining customized workflows for accountability and business intelligence. Consulting with internal users for requirement gathering. Administering user access.}
-        \resumeItem{Exploratory Data Analysis}
-          {Researching historical workitem data to develop forecasting models. By predicting workload, teams can scale or reduce vendor spending.}
-        \resumeItem{Microservice and Data Pipeline Development}
-          {Designed and developed a microservice to consolidate analyst tasks. Maintaining event processing components to add features, reduce server load, fix bugs, or add reusability.}
-        \resumeItem{Assisting with Training}
-          {Leading training sessions for Jira development. Helped onboard 3 full time data engineers.}
-        \resumeItem{Team Building}
-          {Organizing department chess tournaments. Trivia captain for weekly competitions.}
-      \resumeItemListEnd
+\roottitle{Interests} % Top level section
 
-    \resumeSubheading
-      {Booksmart}{Philadelphia, PA}
-      {Backend Developer}{July 2016 - September 2017}
-      \resumeItemListStart
-        \resumeItem{Webserver Development}
-          {Python backend for a web and mobile application used by tour owners and musicians.}
-        \resumeItem{Specification Writing}
-          {Designed new feature implementations, considering scalability and maintainability. Worked with management and user interface teams to meet requirements.}
-      \resumeItemListEnd
+\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+{Non-exhaustive and in alphabetical order:}
+{Buddhism, chess, go \textit{(baduk)}, mathematics, open source, philosophy, reading, Rubik's cubes, software engineering, tattoos, vegetarian cooking, volunteering, and woodcarving.}
 
-    \resumeSubheading
-      {Chess.com}{Remote}
-      {Contract Developer}{March 2017 - May 2017}
-      \resumeItemListStart
-        \resumeItem{Full Stack Feature Development}
-          {Developed new features for millions of users.}
-        \resumeItem{Testing and Maintenance}
-          {Discovered production bugs and implemented hotfixes.}
-      \resumeItemListEnd
+%----------------------------------------------------------------------------------------
 
-    \resumeSubheading
-      {Drexel Hyperloop}{Philadelphia, PA}
-      {Control Systems Software Engineer}{July 2016 - October 2016}
-      \resumeItemListStart
-        \resumeItem{Sensor Data Logging}
-          {Implemented a database for live data streaming. Data sources from various engineering systems were monitored for irregularities and performance.}
-        \resumeItem{Requirements Coordination}
-          {Determined software needs of multiple teams, totaling over one hundred personnel.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Thomson Reuters, IP \& Science}{Philadelphia, PA}
-      {Data Analyst}{March 2016 - September 2016}
-      \resumeItemListStart
-        \resumeItem{Big Data}
-          {Queried a Hadoop cluster to extract bibliometric data for customers.}
-        \resumeItem{Web Scraping}
-          {Started data population for new features and data models.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Armada International Advisors}{Philadelphia, PA}
-      {Full Stack Developer}{October 2014 - October 2015}
-      \resumeItemListStart
-        \resumeItem{App Development}
-          {Developed and maintained web and mobile apps. Developed equipment tracking app.}
-        \resumeItem{Web Scraping for Sales Leads}
-          {Collected contact data for sales leads using web crawlers and social media scraping.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------------
-\section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{One-way Anonymous Messaging App}
-      {Native Android app to send and receive messages from strangers.}
-    \resumeSubItem{Custom Garbage Collector}
-      {Mark and sweep memory allocation example in Objective-C.}
-    \resumeSubItem{Custom Graphics Engine}
-      {Features include VBO rendering, first person movement, and basic collision detection.}
-  \resumeSubHeadingListEnd
-
-
-% --------PROGRAMMING SKILLS------------
-\section{Programming Skills}
- \resumeSubHeadingListStart
-    \resumeSubItem{Languages}
-      {Python, Javascript, Groovy, C++, Java, Objective-C, C\#, Go, Lua, Haskell, Prolog, VB}
-    \resumeSubItem{Technologies}
-      {Django, MySQL, Express, HiveQL, MS SQL, Spring, MongoDB, Symfony, Bloomberg Terminal}
- \resumeSubHeadingListEnd
-
- % --------PROGRAMMING SKILLS------------
- \section{Activites}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Hackathons}
-      {Philly Codefest, Bitcamp, Numenta NuPic, Hackster.IO Hardware Weekend, PSU Hacks}
-    \resumeSubItem{Chess}
-      {Drexel Chess Club President, USCF Member}
-  \resumeSubHeadingListEnd
-
-
-%-------------------------------------------
 \end{document}
