@@ -37,7 +37,7 @@
 \noindent\href{mailto:nate.schultz@outlook.com}{nate.schultz@outlook.com}\bull % Your email address
 \textsmaller{+}1 (978) 201-2997\bull % Your phone number(s) and Skype username
 \href{https://github.com/beefy}{Github} \bull \href{https://www.linkedin.com/in/beefybeefy/}{Linkedin}\\ % Your URL
-430 W Jefferson St, Apt 3\bull Philadelphia PA, 19122% Your address
+1332 South 52nd St\bull Philadelphia PA, 19143% Your address
 
 \spacedhrule{0.9em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
 
@@ -65,12 +65,42 @@
 \roottitle{Recent Experience} % Top level section
 
 \headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{Zendesk}
+{\textsc{Philadelphia, PA (Remote)}} {
+
+\headedsubsection
+{Senior Data Engineer}
+{Feb '23 -- Present}
+{\bodytext{Recently I was promoted to Senior Data Engineer to reflect the ownership and autonomy I have over my projects. My project portfolio includes the same work I was doing as a Data Engineer. To give an example of a recent project, here is something I'm actively working on: a new python ETL pipeline from our data lake / data warehouse to dataset schema registry / data catalog.
+
+\begin{itemize}  
+    \item{The ETL pipeline will query AWS S3 for the input and output datasets for our data lake. The data lake is structured as a CDC so the most recent folders are checked for updates.}
+    \item{The ETL runs as a cron job alongside other schema registry ingestion pipelines. The cron job is managed by kubernetes and our internal CICD.}
+    \item{The dataset schema metadata is loaded into a third party database, who manage the database and UI of our data catalog. The app is used for dataset discoverability and to assist with data governance.}
+\end{itemize}
+    
+}}
+
+\headedsubsection % Job title entry for the current employer
+{Data Engineer}
+{Aug '21 -- Jan '23}
+{\bodytext{As part of the foundational engineering department, we are tasked with building common infrastructure for the product engineering teams. My project portfolio included:\begin{itemize}  
+ \item{Technical owner of a java microservice that ingests about 50 million kafka messages per day. The main role of the service is to re-index and archive streamed product data.}
+ \item{Adding/maintaining data connections for our dataset schema registry in python}
+ \item{AWS EC2 maintenance operations for a data aggregation service (now deprecated)}
+ \item{Team security champion for owning vulnerability SLAs and security operations.}
+\end{itemize}
+
+One benefit that I enjoy at this role is volunteering with Hack Your Future, where I help teach refugees how to code.
+}}}
+
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
 {Bloomberg LP}
 {\textsc{Princeton, NJ \& Philadelphia, PA (Remote)}} {
 
 \headedsubsection % Job title entry for the current employer
 {Acquisition Tech Lead}
-{Dec '19 -- Present}
+{Dec '19 -- Aug '21}
 {\bodytext{As one of the initial members of this team, I gained ownership of implementing the team's technical projects. Our team is responsible for maintaining hundreds of thousands of web crawlers and increasing our coverage with new crawlers. I build platforms to add transparency and improve reporting for Bloomberg's acquisition processes. My project portfolio includes:\begin{itemize}  
  \item{A validation workflow with over 70 logic checks to ensure web crawlers are configured properly}
  \item{A full stack website to parse web crawler configurations for easier reporting}
@@ -201,67 +231,21 @@ social media scraping.}
 Rubric (from worst to best): Novice, Advanced Beginner, Competent, Proficient, Expert
 \inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
 {Languages:}
-{Python (Proficient), Javascript (Competent), Lua (Advanced Beginner), Java (Competent), C# (Competent), C++ (Advanced Beginner), Go (Novice), VB (Novice), Objective-C (Novice), Haskell (Novice), Prolog (Novice)}
+{Python (Proficient), Javascript (Proficient), Java (Competent), C\# (Novice), Lua (Novice), C++ (Novice), Go (Novice), VB (Novice), Objective-C (Novice), Haskell (Novice), Prolog (Novice)}
+\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+{DevOps:}
+{Kubernetes (Advanced Beginner), Docker (Competent), AWS (Competent), Google Cloud (Competent)}
 \inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
 {Backend Frameworks:}
-{Flask (Proficient), FastAPI (Proficient), Django (Proficient), Express (Competent), Spring (Advanced Beginner), ASP.NET (Advanced Beginner)}
+{VertX (Competent), Flask (Proficient), FastAPI (Proficient), Django (Proficient), Express (Proficient), Spring (Advanced Beginner), ASP.NET (Advanced Beginner)}
 \inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
 {Frontend Frameworks:}
-{React (Competent), Redux (Competent), Vue.js (Advanced Beginner), Android Native (Advanced Beginner), Bootstrap (Novice)}
+{React (Competent), Redux (Novice), Vue.js (Advanced Beginner), Android Native (Novice), Bootstrap (Novice)}
 \inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
 {Databases:}
 {Apache Kafka (Proficient), MongoDB (Competent), MS SQL (Competent), mySQL (Competent), PostgreSQL (Competent), HiveQL (Advanced Beginner), Solr (Advanced Beginner), RDF Triplestore / SPARQL (Advanced Beginner)}
 
 \spacedhrule{1.6em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
-
-\roottitle{Side Projects} % Top level section
-\inlineheadsection
-{One-way Anonymous Messaging App:}
-{Native Android app to send and receive messages from strangers.}
-\inlineheadsection
-{Custom Garbage Collector:}
-{Mark and sweep memory allocation example in Objective-C.}
-\inlineheadsection
-{Command Line Chess Server:}
-{Real time chess as a simple networking example.}
-\inlineheadsection
-{Custom Graphics Engine:}
-{ Features include VBO rendering, first person movement, and basic collision detection.}
-
-\roottitle{Armchair Philosophy} % Top level section
-\inlineheadsection
-{Taoism and Monism:}
-{Presocratic philosophers thought all life and matter was interconnected. Many-worlds quantum physicists believe our dimension is connected to other dimensions through a single [probability] wave function.}
-\inlineheadsection
-{Eternalism and Presentism:}
-{Einstein's theory of relativity implies the existence of block-time, and that we only feel like we're in the present because every moment of time would feel like the present. Personally, I'm ontologically eternalist but epistemologically presentist.}
-\inlineheadsection
-{Free Will and Determinism:}
-{Quantum indeterminacy can be resolved with either the many-worlds philosophy or with pilot wave theory. However, preservation of quantum information may not imply that free will cannot exist. The Heisenberg uncertainty principle implies that a system cannot be perfectly observed / predicted.}
-
-
-%------------------------------------------------
-
-\spacedhrule{1.6em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
-
-%----------------------------------------------------------------------------------------
-%	INTERESTS SECTION
-%----------------------------------------------------------------------------------------
-
-\roottitle{Activities} % Top level section
-
-\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
-{Hackathons:}
-{Philly Codefest, Bitcamp, Numenta NuPic, Hackster.IO Hardware Weekend, PSU Hacks}
-\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
-{Clubs:}
-{Bloomberg Toastmasters VP of Membership, Drexel Chess Club President, LaEsquina Garden Member}
-
-\roottitle{Interests} % Top level section
-
-\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
-{Non-exhaustive and in alphabetical order:}
-{Buddhism, camping, chess, DeFi, mathematics, open source, philosophy, Rubik's cubes, software engineering, vegetarian cooking, volunteering, and yoga.}
 
 %----------------------------------------------------------------------------------------
 
